@@ -12,17 +12,19 @@ A basic Rails App to track transactions into and out of Sinking Funds.
 Two main models are needed:
 ####1. SinkingFund model
 
-Field Name | Type | Description
-name | String | Name of sinking fund
-target_amount_in_cents | Integer | Target amount of the Sinking Fund (can be either general target like an Emergency Fund or a specific purchase amount e.g. Amazon Prime membership fee)
-deadline | Date | Optional - if a deadline is available for when the fund is needed
+| Field Name | Type | Description |
+| ---------- | ---- | ----------- |
+| name | String | Name of sinking fund |
+| target_amount_in_cents | Integer | Target amount of the Sinking Fund (can be either general target like an Emergency Fund or a specific purchase amount e.g. Amazon Prime membership fee) |
+| deadline | Date | Optional - if a deadline is available for when the fund is needed | 
 
 ####2. Transaction Model
 
-Field Name | Type | Description
-transaction_at | Date | When transaction occured to/from the fund
-type | String | One of Credit (payment into fund) or Debit (spending from fund)
-amount_in_cents | Integer | Transaction amount in cents
+| Field Name | Type | Description |
+| ---------- | ---- | ----------- |
+| transaction_at | Date | When transaction occured to/from the fund |
+| type | String | One of Credit (payment into fund) or Debit (spending from fund) |
+| amount_in_cents | Integer | Transaction amount in cents |
 
 
 ## TODO
